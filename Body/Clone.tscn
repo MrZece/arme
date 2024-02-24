@@ -1,0 +1,100 @@
+[gd_scene load_steps=8 format=3 uid="uid://db6hhdyti5fwi"]
+
+[ext_resource type="Script" path="res://movc.gd" id="1_7gmb4"]
+[ext_resource type="Texture2D" uid="uid://gg2tldelmfhf" path="res://Cthigh.png" id="2_dklxf"]
+[ext_resource type="Texture2D" uid="uid://cyrxulimj0h3b" path="res://Ctorso.png" id="2_jr1bi"]
+[ext_resource type="Texture2D" uid="uid://bnqveovp3ntd0" path="res://ClegL.png" id="3_yvxw3"]
+[ext_resource type="Texture2D" uid="uid://dgbeerxccu678" path="res://Cthighr.png" id="4_yep21"]
+[ext_resource type="Texture2D" uid="uid://bvtpj30dsdkmc" path="res://CLfoot.png" id="4_ygm33"]
+[ext_resource type="Texture2D" uid="uid://dxnw4y8cujp6s" path="res://CLshoulder.png" id="5_4sryy"]
+
+[node name="CharacterBody2D" type="Node2D"]
+position = Vector2(565, 305)
+script = ExtResource("1_7gmb4")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(0.430253, 0.832955)
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(4, -108)
+
+[node name="CLthight" type="Polygon2D" parent="Node2D"]
+texture_filter = 1
+position = Vector2(33, 156)
+rotation = -0.132119
+offset = Vector2(-80, -100)
+texture = ExtResource("2_dklxf")
+polygon = PackedVector2Array(49.6599, 24.4898, 50, 140.136, 55.102, 155.442, 59.5238, 159.524, 100, 159.864, 105.102, 155.102, 109.864, 139.796, 109.864, 24.8299, 99.3197, 4.42177, 94.2177, 0, 64.6258, 0.340136, 59.8639, 5.10204)
+uv = PackedVector2Array(49.6599, 24.4898, 50, 140.136, 55.102, 155.442, 59.5238, 159.524, 100, 159.864, 105.102, 155.102, 109.864, 139.796, 109.864, 24.8299, 98.9796, 4.42177, 94.2177, 0, 64.6258, 0.340136, 59.8639, 5.10204)
+
+[node name="CLleg" type="Polygon2D" parent="Node2D"]
+texture_filter = 1
+position = Vector2(35, 286)
+rotation = 0.0490515
+offset = Vector2(-80, -100)
+texture = ExtResource("3_yvxw3")
+polygon = PackedVector2Array(64.6258, 0.153741, 59.8639, 4.91565, 55.4422, 15.4599, 55.4422, 139.95, 65.3061, 149.814, 94.5578, 150.494, 105.102, 139.95, 104.762, 15.4599, 99.6599, 4.57551, 94.5578, -0.526531)
+uv = PackedVector2Array(64.6258, 0.153741, 59.8639, 4.91565, 55.4422, 15.4599, 55.4422, 139.95, 65.3061, 149.814, 94.5578, 150.494, 105.102, 139.95, 104.762, 15.4599, 99.6599, 4.57551, 94.5578, -0.526531)
+
+[node name="CLfoot" type="Polygon2D" parent="Node2D"]
+texture_filter = 1
+position = Vector2(51, 335)
+offset = Vector2(-80, -10)
+texture = ExtResource("4_ygm33")
+polygon = PackedVector2Array(39.7399, 0.498844, 34.8266, 5.70116, 34.6821, 25.3543, 40.0289, 30.4121, 124.855, 30.5566, 135.838, 19.863, 125.289, 10.1809, 99.5665, 0.498844)
+uv = PackedVector2Array(39.7399, 0.498844, 34.8266, 5.70116, 34.6821, 25.3543, 40.0289, 30.4121, 124.855, 30.5566, 135.838, 19.863, 125.289, 10.1809, 99.5665, 0.498844)
+polygons = [PackedInt32Array(0, 1, 2, 3), PackedInt32Array(7, 0, 3, 4), PackedInt32Array(7, 6, 5, 4)]
+
+[node name="CLshoulder" type="Polygon2D" parent="Node2D"]
+texture_filter = 1
+position = Vector2(66, 15)
+rotation = 2.85381
+scale = Vector2(0.991393, -1)
+offset = Vector2(-80, -100)
+texture = ExtResource("5_4sryy")
+polygon = PackedVector2Array(65.0704, -0.436056, 55.2113, 10.2682, 54.9296, 129.705, 59.7183, 139.846, 65.0704, 144.634, 89.8592, 144.916, 94.6479, 140.127, 100, 129.986, 100.282, 9.98648, 89.5775, -0.436056)
+uv = PackedVector2Array(65.0704, -0.436056, 55.2113, 10.2682, 54.9296, 129.705, 59.7183, 139.846, 65.0704, 144.634, 89.8592, 144.916, 94.6479, 140.127, 100, 129.986, 100.282, 9.98648, 89.5775, -0.436056)
+
+[node name="Ctorso" type="Polygon2D" parent="Node2D"]
+texture_filter = 1
+position = Vector2(0, 1)
+offset = Vector2(-80, -100)
+texture = ExtResource("2_jr1bi")
+polygon = PackedVector2Array(29.9625, 9.73783, 14.9813, 25.4682, 14.6067, 59.176, 25.0936, 98.8764, 25.0936, 170.037, 34.8315, 180.15, 45.3184, 185.019, 114.981, 185.393, 124.345, 174.906, 135.206, 140.075, 140.449, 80.1498, 145.318, 69.6629, 145.318, 35.5805, 130.337, 9.73783)
+uv = PackedVector2Array(29.9625, 9.73783, 14.9813, 25.4682, 14.6067, 59.176, 25.0936, 98.8764, 25.0936, 170.037, 34.8315, 180.15, 45.3184, 185.019, 114.981, 185.393, 124.345, 174.906, 135.206, 140.075, 140.449, 80.1498, 145.318, 69.6629, 145.318, 35.5805, 130.337, 9.73783)
+
+[node name="CRthight" type="Polygon2D" parent="Node2D"]
+texture_filter = 1
+position = Vector2(-28, 161)
+rotation = -0.025058
+offset = Vector2(-80, -100)
+texture = ExtResource("4_yep21")
+polygon = PackedVector2Array(59.8639, 5.10204, 50, 25.1701, 50, 139.456, 55.102, 154.762, 60.2041, 159.524, 100, 159.864, 105.102, 154.762, 109.864, 140.136, 110.204, 24.8299, 99.6599, 4.7619, 94.8979, 0, 64.6258, 0.340136)
+uv = PackedVector2Array(59.8639, 5.10204, 50, 25.1701, 50, 139.456, 55.102, 154.762, 60.2041, 159.524, 100, 159.864, 105.102, 154.762, 109.864, 140.136, 110.204, 24.8299, 99.6599, 4.7619, 94.8979, 0, 64.6258, 0.340136)
+
+[node name="CRleg" type="Polygon2D" parent="Node2D"]
+texture_filter = 1
+position = Vector2(-47, 290)
+rotation = 0.228147
+offset = Vector2(-80, -100)
+texture = ExtResource("3_yvxw3")
+polygon = PackedVector2Array(64.6258, 0.153741, 59.8639, 4.91565, 55.4422, 15.4599, 55.4422, 139.95, 65.3061, 149.814, 94.5578, 150.494, 105.102, 139.95, 104.762, 15.4599, 99.6599, 4.57551, 94.5578, -0.526531)
+uv = PackedVector2Array(64.6258, 0.153741, 59.8639, 4.91565, 55.4422, 15.4599, 55.4422, 139.95, 65.3061, 149.814, 94.5578, 150.494, 105.102, 139.95, 104.762, 15.4599, 99.6599, 4.57551, 94.5578, -0.526531)
+
+[node name="CRfoot" type="Polygon2D" parent="Node2D"]
+texture_filter = 1
+position = Vector2(-37, 337)
+offset = Vector2(-80, -10)
+texture = ExtResource("4_ygm33")
+polygon = PackedVector2Array(39.7399, 0.498844, 34.8266, 5.70116, 34.6821, 25.3543, 40.0289, 30.4121, 124.855, 30.5566, 135.838, 19.863, 125.289, 10.1809, 99.5665, 0.498844)
+uv = PackedVector2Array(39.7399, 0.498844, 34.8266, 5.70116, 34.6821, 25.3543, 40.0289, 30.4121, 124.855, 30.5566, 135.838, 19.863, 125.289, 10.1809, 99.5665, 0.498844)
+polygons = [PackedInt32Array(0, 1, 2, 3), PackedInt32Array(7, 0, 3, 4), PackedInt32Array(7, 6, 5, 4)]
+
+[node name="CRshoulder" type="Polygon2D" parent="Node2D"]
+texture_filter = 1
+position = Vector2(-32, 16)
+rotation = -0.287784
+offset = Vector2(-80, -100)
+texture = ExtResource("5_4sryy")
+polygon = PackedVector2Array(65.0704, -0.436056, 55.2113, 10.2682, 54.9296, 129.705, 59.7183, 139.846, 65.0704, 144.634, 89.8592, 144.916, 94.6479, 140.127, 100, 129.986, 100.282, 9.98648, 89.5775, -0.436056)
+uv = PackedVector2Array(65.0704, -0.436056, 55.2113, 10.2682, 54.9296, 129.705, 59.7183, 139.846, 65.0704, 144.634, 89.8592, 144.916, 94.6479, 140.127, 100, 129.986, 100.282, 9.98648, 89.5775, -0.436056)
